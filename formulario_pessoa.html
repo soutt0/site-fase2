@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin-left: 100px;
+        }
+        .form-container {
+            width: 100%;
+            padding: 20px;
+        }
+        h2 {
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+        .classelabeleinput{
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        footer {
+            background-color: #fff8d4;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #2d6cdf;
+        }
+        header {
+            background-color: #fff8d4;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <header style="margin-right: 80px;">
+            <img src="imagens/logo.png" alt="Logo Banho & Tosa">
+            <nav class="menu">
+                <a href="pagina_inicial.html" style="margin-right: 20px;">Home</a>
+                <a href="produto.html" style="margin-right: 20px;">Produtos</a>
+                <a href="servico.html" style="margin-right: 20px;">Serviços</a>
+                <a href="agendamento.html" style="margin-right: 20px;">Agendamento</a>
+            </nav>
+        </header>
+        <br><br><br>
+        <h2>Cadastro do Cliente</h2>
+        <form action="https://formsubmit.co/gkezoficial@gmail.com" method="POST" style="margin-left: 10%;">
+            <br>
+            <label class="classelabeleinput" style="margin-left: 26px;">Nome:</label>
+            <input type="text" placeholder="Insira o seu nome" name="nome" class="classelabeleinput" required>
+            <br><br>
+
+            <label class="classelabeleinput" style="margin-left: 22px;">E-mail:</label>
+            <input type="email" placeholder="fulano@email.com" name="email" class="classelabeleinput" required>
+            <br><br>
+
+            <label class="classelabeleinput" style="margin-left: 8px;">Telefone:</label>
+            <input type="number" placeholder="DDXXXXXXXXX" class="classelabeleinput" name="telefone" required>
+            <br><br>
+
+            <label class="classelabeleinput">Endereço:</label>
+            <input type="text" placeholder="Rua Oscar Freire" name="endereco" class="classelabeleinput" required>
+            <br><br>
+
+            <label class="classelabeleinput" style="margin-left: 14px;">Número</label>
+            <input type="number" placeholder="Insira o numero" name="numendereco" class="classelabeleinput" required>
+            <br><br>
+
+            <label class="classelabeleinput" style="margin-left: 18px;">Senha:</label>
+            <input  type="password" placeholder="********" name="senha" class="classelabeleinput" required>
+            <br><br><br>
+            <button type="submit" class="classelabeleinput" style="margin-left: 15%;">Confirmar Agendamento</button>
+        </form>
+        <br><br><br><br><br>
+        <footer style="margin-right: 120px;">
+            <p style="font-size: 16px; margin-left: -100px;margin-right: -100px;"">&copy; 2024 Gustavo Castro Souto. Todos os direitos reservados.</p>
+            <p style="font-size: 16px;">Contato: <a href="mailto:gkzeoficial@gmail.com">gkzeoficial@gmail.com</a></p>
+            <nav class="menu">
+                <a href="pagina_inicial.html"style="margin-right: 20px;">Home</a>
+                <a href="produto.html"style="margin-right: 20px;">Produtos</a>
+                <a href="formulario_pessoa.html"style="margin-right: 20px;">Cadastro</a>
+                <a href="agendamento.html"style="margin-right: 20px;">Agendamento</a>
+            </nav>
+            <p style="font-size: 16px;">Desenvolvido por Gustavo Souto</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: #fff8d4;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+        
+        footer {
+            background-color: #fff8d4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #2d6cdf;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .item {
+            background-color: rgb(239, 239, 239);
+            border: 1px solid #ffffff;
+            padding: 10px;
+            margin: 10px;
+            height: 180px;
+            box-sizing: border-box;
+            margin-top: 70px;
+            text-align: center;
+            width: 350px;
+            font-size: 19px;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item p {
+            margin-top: 10px;
+        }
+        
+        .corpo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .corpo .imagem {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .corpo .imagem img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .corpo .texto {
+            flex: 1;
+            color: #333;
+        }
+
+        .corpo .texto h2 {
+            color: rgb(23,94,168);
+            font-size: 29px;
+            margin-bottom: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .corpo .texto p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .corpo .lista-precos {
+            margin-top: 30px;
+        }
+
+        .corpo .lista-precos div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            margin-right: 80px;
+        }
+        .corpo .lista-precos .preco {
+            color: rgb(23,94,168);
+            font-size: 30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+        }
+        .titulo
+        {
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button {
+            width: 60%;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Banho & Tosa">
+        <br><br>
+        <nav class="menu" style="font-family: Arial, Helvetica, sans-serif;">
+            <a href="pagina_inicial.html" style="margin-right: 22px;">Home</a>
+            <a href="produto.html"style="margin-right: 22px;">Produtos</a>
+            <a href="servico.html"style="margin-right: 22px;">Serviços</a>
+            <a href="agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+    <div class="corpo">
+        <div class="imagem">
+            <img src="imagens/imagemtoposervico.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>Cuide da higiene e bem-estar do seu pet!</h2>
+            <p>Oferecemos serviços completos de banho, tosa e cuidados especiais para todas as raças e tamanhos. Garanta que seu amigo de quatro patas receba o melhor tratamento com produtos de qualidade e profissionais experientes.</p>
+            <h2 style="color: black;">Venha fazer seu agendamento conosco e dê ao seu pet o cuidado que ele merece!</h2>
+            
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <a href="agendamento.html">
+        <button style="margin-left: 20%;">Clique aqui e faça seu Agendamento!</button>
+    </a>
+    <br><br><br><br><br>
+
+    <p></p>
+
+    <div class="corpo">
+        <div class="imagem">
+            <img src="imagens/banho-pequeno.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>BANHO SIMPLES PARA PEQUENO PORTE, ATÉ 30CM</h2>
+            <p>Limpeza de ouvidos, shampoo pré-lavagem, shampoo neutro, condicionador, toalha esterilizada, remoção de água, secagem, tosa, penteado/decoração, cromoterapia e perfumagem.</p>
+            <div class="lista-precos">
+                <div>
+                    <span class="titulo">PELO CURTO</span>
+                    <span class="preco">R$ 35,99</span>
+                </div>
+                <div>
+                    <span class="titulo">PELO LONGO</span>
+                    <span class="preco">R$ 38,99</span>
+                </div>
+                <div>
+                    <span class="titulo">LIMPEZA HIGIÊNICA</span>
+                    <span class="preco">R$ 7,99</span>
+                </div>
+                <div><p>Tosa barriga, por baixo das patinhas e a parte traseira. Incluso Corte de Unhas</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="corpo" style="margin-top: 80px;">
+        <div class="imagem">
+            <img src="imagens/banho-pequeno.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>TOSAS PARA PEQUENO PORTE, ATÉ 30CM</h2>
+            <p>Limpeza de ouvidos, shampoo pré-lavagem, shampoo neutro, condicionador, toalha esterilizada, remoção de água, secagem, tosa, penteado/decoração, cromoterapia e perfumagem.</p>
+            <div class="lista-precos">
+                <div>
+                    <span class="titulo">TOSA</span>
+                    <span class="preco">R$ 74,99</span>
+                </div>
+                <div><p>É uma excelente opção para deixar os pelos bem baixinhos, podendo escolher entre duas lâminas; 1.6mm ou 3.2mm de altura.</p></div>
+                <div>
+                    <span class="titulo">TOSA TESOURA</span>
+                    <span class="preco">R$ 94,99</span>
+                </div>
+                <div><p>Acabamento mais refinado, escolha o estilo original de seu pet com a tosa de raça ou a tosa bebê.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="corpo" style="margin-top: 80px;">
+        <div class="imagem">
+            <img src="imagens/banhomedio.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>BANHO SIMPLES PARA MÉDIO PORTE, ATÉ 40CM</h2>
+            <p>Limpeza de ouvidos, shampoo pré-lavagem, shampoo neutro, condicionador, toalha esterilizada, remoção de água, secagem, penteado/decoração, cromoterapia e perfumagem.</p>
+            <div class="lista-precos">
+                <div>
+                    <span class="titulo">PELO CURTO</span>
+                    <span class="preco">R$ 59,99</span>
+                </div>
+                <BR></BR>
+                <div>
+                    <span class="titulo">PELO LONGO</span>
+                    <span class="preco">R$ 70,00</span>
+                </div>
+                <br>
+                <div>
+                    <span class="titulo">LIMPEZA HIGIÊNICA</span>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+                <div><p>Tosa barriga, por baixo das patinhas e a parte traseira. Incluso Corte de Unhas</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="corpo" style="margin-top: 80px;">
+        <div class="imagem">
+            <img src="imagens/banhomedio.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>TOSAS PARA MÉDIO PORTE, ATÉ 40CM</h2>
+            <p>Limpeza de ouvidos, shampoo pré-lavagem, shampoo neutro, condicionador, toalha esterilizada, remoção de água, secagem, tosa, penteado/decoração, cromoterapia e perfumagem.</p>
+            <div class="lista-precos">
+                <div>
+                    <span class="titulo">TOSA MÁQUINA</span>
+                    <span class="preco">R$ 90,00</span>
+                </div>
+                <div><p>É uma excelente opção para deixar os pelos bem baixinhos, podendo escolher entre duas lâminas; 1.6mm ou 3.2mm de altura.</p></div>
+                <BR></BR>
+                <div>
+                    <span class="titulo">TOSA TESOURA</span>
+                    <span class="preco">R$ 120,00</span>
+                </div>
+                <div><p>Acabamento mais refinado, escolha o estilo original de seu pet com a tosa de raça.</p></div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="corpo" style="margin-top: 80px;">
+        <div class="imagem">
+            <img src="imagens/banhogrande.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>BANHO SIMPLES PARA GRANDE PORTE, ATÉ 60CM</h2>
+            <p>Limpeza de ouvidos, shampoo pré-lavagem, shampoo neutro, condicionador, toalha esterilizada, remoção de água, secagem, penteado/decoração, cromoterapia, (sem perfume)</p>
+            <div class="lista-precos">
+                <div>
+                    <span class="titulo">PELO CURTO</span>
+                    <span class="preco">R$ 95,00</span>
+                </div>
+                
+                <BR></BR>
+                <div>
+                    <span class="titulo">PELO LONGO</span>
+                    <span class="preco">R$ 120,00</span>
+                </div>
+                </BR></BR>
+                <div>
+                    <span class="titulo">LIMPEZA HIGIÊNICA</span>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+                <div><p>Tosa barriga, por baixo das patinhas e a parte traseira. Incluso Corte de Unhas</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="corpo" style="margin-top: 80px;">
+        <div class="imagem">
+            <img src="imagens/banhogrande.png" alt="Descrição da imagem">
+        </div>
+        <div class="texto">
+            <h2>TOSAS PARA GRANDE PORTE, ATÉ 60CM</h2>
+            <p>Limpeza de ouvidos, shampoo pré-lavagem, shampoo neutro, condicionador, toalha esterilizada, remoção de água, secagem, penteado/decoração, cromoterapia, (sem perfume)</p>
+            <div class="lista-precos">
+                <div>
+                    <span class="titulo">TOSA MÁQUINA</span>
+                    <span class="preco">R$ 150,00</span>
+                </div>
+                <div><p>É uma excelente opção para deixar os pelos bem baixinhos, podendo escolher entre duas lâminas; 1.6mm ou 3.2mm de altura.</p></div>
+                
+                <BR></BR>
+                <div>
+                    <span class="titulo">TOSA TESOURA</span>
+                    <span class="preco">R$ 189,99</span>
+                </div>
+                <div><p>Acabamento mais refinado, escolha o estilo original de seu pet com a tosa de raça.</p></div>
+                </BR></BR>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="font-family: Arial, Helvetica, sans-serif;">
+        <p>&copy; 2024 Gustavo Castro Souto. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:gkzeoficial@gmail.com">gkzeoficial@gmail.com</a></p>
+        <nav class="menu" style="font-family: Arial, Helvetica, sans-serif;">
+            <a href="pagina_inicial.html" style="margin-right: 20px;">Home</a>
+            <a href="produto.html"style="margin-right: 20px;">Produtos</a>
+            <a href="formulario_pessoa.html"style="margin-right: 20px;">Cadastro</a>
+            <a href="agendamento.html"style="margin-right: 20px;">Agendamento</a>
+        </nav>
+        <p>Desenvolvido por Gustavo Souto</p>
+    </footer>
+</body>
+</html>

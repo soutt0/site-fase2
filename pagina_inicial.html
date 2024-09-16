@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        header {
+            background-color: #fff8d4;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+        
+        footer {
+            background-color: #fff8d4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #2d6cdf;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .produtos-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .titulo-produtos {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .grid-produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .produto {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .nome-produto {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .preco-produto {
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Banho & Tosa">
+        <br><br>
+        <nav class="menu">
+            <a style="margin-right: 25px;" href="pagina_inicial.html">Home</a>
+            <a style="margin-right: 25px;" href="produto.html">Produtos</a>
+            <a style="margin-right: 25px;" href="servico.html">Serviços</a>
+            <a style="margin-right: 25px;" href="agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+
+    <div class="produtos-container">
+        <br><br><br>
+        <h2  style="margin-top: 50px; margin-bottom: 40px;" class="titulo-produtos">Serviços</h2>
+        <a href="servico.html">
+            <img src="imagens/banner.png" style="width: 100%; height: 300px;">
+        </a>
+        <p></p>
+        <h2 style="margin-top: 50px;margin-bottom: 40px;" class="titulo-produtos">Destaques</h2>
+        <div class="grid-produtos">
+            <div class="produto">
+                <a href="detalhe_produto.html">
+                    <img src="imagens/racao3.png" style="height: 370px;" alt="Ração Purina Pro Plan">
+                </a>
+                <p class="nome-produto">Purina Pro Plan - Chicken & Egg</p>
+                <p class="preco-produto">R$ 259,99</p>
+            </div>
+            
+            <div class="produto">
+                <a href="detalhe_produto.html">
+                    <img src="imagens/racao4.png" alt="Ração Pedigree Vital 20kg">
+                </a>
+                <p class="nome-produto">Ração Encore  Chicken</p>
+                <p class="preco-produto">R$ 159,99</p>
+            </div>
+            </a>
+            
+        </div>
+        <div class="grid-produtos" style="margin-top: 40px;">
+
+            <div class="produto">
+                <a href="detalhe_produto.html">
+                    <img src="imagens/racao6.png" style="height: 370px;" alt="Ração Pedigree Vital 20kg">
+                </a>
+                <p class="nome-produto">Ração Golden Vital 10kg</p>
+                <p class="preco-produto">R$ 159,99</p>
+            </div>
+            </a>
+            
+            <div class="produto">
+                <a href="detalhe_produto.html">
+                    <img src="imagens/raçao1.png" alt="Ração Pedigree Vital 20kg">
+                </a>
+                <p class="nome-produto">Whiskas Nutrição 3kg</p>
+                <p class="preco-produto">R$ 19,99</p>
+            </div> 
+            </a>         
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gustavo Castro Souto. Todos os direitos reservados.</p>
+        <br>
+        <p>Contato: <a href="mailto:gkzeoficial@gmail.com">gkzeoficial@gmail.com</a></p>
+        <br>
+        <nav class="menu">
+            <a style="margin-right: 10px;" href="pagina_inicial.html">Home</a>
+            <a style="margin-right: 10px;" href="produto.html">Produtos</a>
+            <a style="margin-right: 10px;" href="formulario_pessoa.html">Cadastro</a>
+            <a style="margin-right: 10px;" href="agendamento.html">Agendamento</a>
+        </nav>
+        <br>
+        <p>Desenvolvido por Gustavo Souto</p>
+    </footer>
+</body>
+</html>

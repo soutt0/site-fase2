@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Pet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin-left: 100px;
+        }
+        .form-container {
+            width: 100%;
+            padding: 20px;
+        }
+        h2 {
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+        .classelabeleinput{
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        header {
+            background-color: #fff8d4;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+        }
+        footer {
+            background-color: #fff8d4;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #2d6cdf;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <header style="margin-right: 100px;">
+            <img src="imagens/logo.png" alt="Logo Banho & Tosa">
+            <nav class="menu">
+                <a href="pagina_inicial.html"style="margin-right: 20px;">Home</a>
+                <a href="produto.html"style="margin-right: 20px;">Produtos</a>
+                <a href="servico.html"style="margin-right: 20px;">Serviços</a>
+                <a href="agendamento.html"style="margin-right: 20px;">Agendamento</a>
+            </nav>
+        </header>
+        <br><br><br>
+        <h2>Cadastro do Pet</h2>
+        <form action="https://formsubmit.co/gkezoficial@gmail.com" method="POST" style="margin-left: 10%;">
+            <br>
+            <label class="classelabeleinput">Nome do Pet:</label>
+            <input type="text" placeholder="Insira o nome do pet" name="nomepet" class="classelabeleinput" required>
+            <br><br><br>
+
+            <label class="classelabeleinput" style="margin-left: 62px;">Tipo:</label>
+            <input type="text" placeholder="Insira o tipo do pet" name="tipo" class="classelabeleinput" required>
+            <br><br><br>
+
+            <label class="classelabeleinput" style="margin-left: 54px;">Raça:</label>
+            <input type="text" placeholder="Insira a raça" name="raça" class="classelabeleinput" required>
+            <br><br><br>
+
+            <label class="classelabeleinput">Temperamento</label> <!--Acho que tem que colocar paragrafo, se nao buga -->
+            <label class="classelabeleinput" style="background-color: rgb(135,206,250); font-weight: bold;  margin-left: 80px;">Baixo</label>
+            <input type="radio" value="baixo" name="baixotemperamento">
+            <label class="classelabeleinput" style="background-color: yellow; font-weight: bold;  margin-left: 80px;">Médio</label>
+            <input type="radio" value="medio" name="mediotemperamento">
+            <label class="classelabeleinput" style="background-color: red; font-weight: bold; margin-left: 80px;">Alto</label>
+            <input type="radio" value="alto" name="altotemperamento">                  
+            <br><br><br><br><br><br>
+            <button type="submit" class="classelabeleinput" style="margin-left: 15%;">Confirmar Agendamento</button>
+        </form>
+        <br><br><br>
+        <footer style="margin-right: 80px;">
+            <p style="font-size: 16px; margin-left: -40px;margin-bottom: 20px;">&copy; 2024 Gustavo Castro Souto. Todos os direitos reservados.</p>
+            <p style="font-size: 16px;margin-right: 50px; margin-bottom: 20px;">Contato: <a href="mailto:gkzeoficial@gmail.com">gkzeoficial@gmail.com</a></p>
+            <nav class="menu" style="margin-right: 10px;margin-bottom: 20px;">
+                <a href="pagina_inicial.html" style="margin-right: 20px;">Home</a>
+                <a href="produto.html" style="margin-right: 20px;">Produtos</a>
+                <a href="formulario_pessoa.html" style="margin-right: 20px;">Cadastro</a>
+                <a href="agendamento.html">Agendamento</a>
+            </nav>
+            <p style="font-size: 16px;">Desenvolvido por Gustavo Souto</p>
+        </footer>
+    </div>
+
+</body>
+</html>
